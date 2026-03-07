@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows-2022]
     steps:
     - name: Checkout by Pushing Tags
       run: git clone --branch ${{ github.ref_name }} --depth 1 https://github.com/llvm/llvm-project.git
