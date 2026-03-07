@@ -25,6 +25,6 @@ jobs:
         $LLVM_VERSION = $matches[0]
         mv build/LLVM-$LLVM_VERSION-win64.zip build/llvm-$LLVM_VERSION-${{ matrix.os }}.zip
     - name: Create Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: build/llvm-*.zip
